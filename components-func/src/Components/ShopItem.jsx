@@ -19,5 +19,3 @@ export const ShopItem = ({ item }) => {
     </div>
   );
 };
-
-export default ShopItem;
