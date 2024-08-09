@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const ShopItem = ({ item }) => {
   return (
     <div className="main-content">
@@ -18,4 +20,15 @@ export const ShopItem = ({ item }) => {
       </div>
     </div>
   );
+};
+
+ShopItem.propTypes = {
+  item: PropTypes.shape({
+    brand: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    descriptionFull: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+  }).isRequired,
 };
